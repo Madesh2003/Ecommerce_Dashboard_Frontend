@@ -48,6 +48,10 @@ export default function Login() {
       <div className="w-full px-6 py-4 mt-6 overflow-hidden bg-clip-padding backdrop-filter bg-opacity-5 bg-white backdrop-blur-xl shadow-md sm:max-w-lg sm:rounded-lg">
         <form onSubmit={handleLogin}>
           <div className="mt-4">
+            <div className="text-center text-white mb-2">
+              <p>Email: example1@gmail.com</p>
+              <p>Password: password</p>
+            </div>
             <label
               htmlFor="email"
               className="block text-sm font-medium tracking-wider uppercase text-white"
@@ -59,6 +63,7 @@ export default function Login() {
                 onChange={(e) => setEmail(e.target.value)}
                 type="email"
                 id="email"
+                name="email"
                 className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               />
             </div>
